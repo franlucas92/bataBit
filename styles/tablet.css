@@ -1,5 +1,6 @@
 .list-prices{
     justify-content: center;
+    overflow-x: hidden;
 }
 .main-section-2 {
     display: flex;
