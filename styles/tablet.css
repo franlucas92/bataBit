@@ -1,0 +1,11 @@
+.list-prices{
+    justify-content: center;
+}
+.main-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section-2 h1{
+    font-size: 4rem;
+}

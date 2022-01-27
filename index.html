@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 608px)">
+    <title>Bata Bit</title>
 </head>
 <body>
     <header class="header">
-        <section class="header-section">
             <div class="header-section-logo">
                 <span>
                     <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,141 +27,203 @@
             </div>
             <h1 class="title">La próxima revolución en el intercambio de criptomonedas.</h1>
             <h4 class="subtitle">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</h4>
-            <button class="menu-button">
+            <a href="#plans" class="menu-button">
                 Conoce Nuestros Planes
                 <span>
                     <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.91 0.589966L6.5 5.16997L11.09 0.589966L12.5 1.99997L6.5 7.99997L0.5 1.99997L1.91 0.589966Z" fill="#201E1C"/>
                     </svg>
                 </span>
-            </button>
-        </section>
+            </a>
     </header>
     <main class="main">
         <section class="main-section-0">
                 <img class="img-bitcoin" src="./res/Bitcoin.png" alt="Bitcoin">
                 <h1 class="title">Visibilizamos todas las tasas de cambio.</h1>
                 <h4 class="subtitle">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</h4>
-                <p class="table-title">Monedas</p>
-                <table class="table">
-                    <colgroup class="table-titles"></colgroup>
-                    <colgroup class="table-prices"></colgroup>
-                    <tr>
-                        <th>Bitcoin</th>
-                        <th>$1.96 
-                            <span>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Etherium</th>
-                        <th>$0.07 
-                            <span>
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5 3L6.75 7.75L4.25 5.25L0.5 9" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.5 3H11.5V6" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Ripple</th>
-                        <th>$2.15 
-                            <span>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Stellar</th>
-                        <th>$4.96 
-                            <span>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </th>
-                    </tr>
-                </table>
-                <span id="nextTable">
-                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.590027 10.59L5.17003 6L0.590026 1.41L2.00003 -6.16331e-08L8.00003 6L2.00003 12L0.590027 10.59Z" fill="black"/>
-                        </svg>
-                </span>
-                <div class="table-updated">
-                    <p>Actualizado:</p> 19 Julio 23:45
-                </div>
+                <section class="container-tables">
+                    <article id="table-monedas" class="table-div">
+                        <p class="table-title">Monedas</p>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Bitcoin</td>
+                                <td>$1.96 
+                                    <span>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Etherium</td>
+                                <td>$0.07 
+                                    <span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5 3L6.75 7.75L4.25 5.25L0.5 9" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 3H11.5V6" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ripple</td>
+                                <td>$2.15 
+                                    <span>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Stellar</td>
+                                <td>$4.96 
+                                    <span>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-updated">
+                            <p>Actualizado:</p>19 Julio 23:45
+                        </div>
+                    </article>
+                    <article id="table-comisiones" class="table-div">
+                        <p class="table-title">Comisiones</p>
+                        <table  class="table">
+                        <tbody>
+                        <tr>
+                            <td>Bitrade</td>
+                            <td>$12.96
+                                <span>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bitpreco</td>
+                            <td>$13.07
+                                <span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 3L6.75 7.75L4.25 5.25L0.5 9" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.5 3H11.5V6" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Novadax</td>
+                            <td>$13.15
+                                <span>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Coinext</td>
+                            <td>$ 14.96 
+                                <span>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 9.5L6.75 4.75L4.25 7.25L0.5 3.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.5 9.5H11.5V6.5" stroke="#F5450D" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <div class="table-updated">
+                            <p>Actualizado:</p>19 Julio 23:45
+                        </div>
+                    </article>
+                    
+            </section>
+            <span class="logo-section">
+                <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.8906 20.2838C10.4673 22.281 0.0927203 20.2399 0.000572001 11.3449C-0.0915763 2.44983 10.9806 7.74852 10.9806 7.74852L16.8906 20.2838Z" fill="#FFC250"/>
+                <path d="M3.12366 6.35426C7.60662 5.58608 11.0114 11.5265 14.7783 17.7232C18.5452 23.92 28.3542 26.3762 34.6218 21.165C40.8894 15.9539 43.542 6.82713 35.8465 1.38317C28.1509 -4.06079 23.3471 8.29872 16.7221 8.63845C10.0972 8.97819 10.0489 4.05367 3.12366 6.35426Z" fill="#FFD064"/>
+                <circle cx="35.1972" cy="11.6219" r="1.96745" fill="#FFE19D"/>
+                <circle cx="31.4263" cy="13.0974" r="1.47559" fill="#FFE19D"/>
+                <circle cx="34.0495" cy="15.0648" r="1.14768" fill="#FFE19D"/>
+                </svg>
+            </span>
         </section>
         <section class="main-section-1">
             <h1 class="title">Creamos un producto sin comparación.</h1>
             <h4 class="subtitle">Confiable y diseñado para su uso diario.</h4>
-            <article>
-                <span class="icon-article">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 6V12L16 14" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                </span>
-                <p class="title-article">Tiempo real</p>
-                <p class="text-article">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-            </article>
-            <article>
-                <span class="icon-article">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                </span>
-                <p class="title-article">No hay tasas escondidas</p>
-                <p class="text-article">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-            </article>
-            <article>
-                <span class="icon-article">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 1V23" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                </span>
-                <p class="title-article">Compara monedas</p>
-                <p class="text-article">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
-            </article>
-            <article>
-                <span class="icon-article">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M22 4L12 14.01L9 11.01" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                </span>
-                <p class="title-article">Información confiable</p>
-                <p class="text-article">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
-            </article>
+            <div class="conte-articles">
+                <article>
+                    <span class="icon-article">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6V12L16 14" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    <p class="title-article">Tiempo real</p>
+                    <p class="text-article">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                </article>
+                <article>
+                    <span class="icon-article">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </span>
+                    <p class="title-article">No hay tasas escondidas</p>
+                    <p class="text-article">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                </article>
+                <article>
+                    <span class="icon-article">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1V23" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </span>
+                    <p class="title-article">Compara monedas</p>
+                    <p class="text-article">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                </article>
+                <article>
+                    <span class="icon-article">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4L12 14.01L9 11.01" stroke="#F7931A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </span>
+                    <p class="title-article">Información confiable</p>
+                    <p class="text-article">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                </article>
+            </div>
         </section>
         <section class="main-section-2">
             <h1 class="title">Conócelo hoy.</h1>
-            <img src="./res/bitcoinbaby1.jpg" alt="Imagen mujer">
         </section>
-        <section>
+        <section id="plans" class="main-section-3">
             <h1 class="title">Escoge el plan que mejor se ajuste a ti.</h1>
             <h4 class="subtitle">Cualquier plan te da acceso completo a nuestra plataforma.</h4>
-            <p class="title-list">Recomendado</p>
-            <ul class="list-prices">
-                <li class="list-prices-item">
+            <section class="list-prices">
+                <article class="list-prices-item">
                     <p class="list-prices-item-title">Pago Mensual</p>
-                    <span class="list-prices-item-price">
+                    <span class="list-prices-item-price price-disabled">
                         <p>$</p>
                         <p>5</p>
                     </span>
                     <p class="list-prices-item-text">*Plan básico para mantenerte informado</p>
-                    <button class="list-prices-item-button">
-                        Escoger este
+                    <button class="list-prices-item-button button-prices-disabled">
+                        <p>Escoger este</p>
                         <span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 12H19" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -165,8 +231,9 @@
                             </svg>
                         </span>
                     </button>
-                </li>
-                <li class="list-prices-item">
+                </article>
+                <article class="list-prices-item">
+                    <p class="title-list">Recomendado</p>
                     <p class="list-prices-item-title">Pago Anual</p>
                     <span class="list-prices-item-price">
                         <p>$</p>
@@ -174,7 +241,7 @@
                     </span>
                     <p class="list-prices-item-text">*Ahorras $129 comparado al plan mensual.</p>
                     <button class="list-prices-item-button button-select">
-                        Escoger este
+                        <p>Escoger este</p>
                         <span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 12H19" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -182,16 +249,16 @@
                             </svg>
                         </span>
                     </button>
-                </li>
-                <li class="list-prices-item">
+                </article>
+                <article class="list-prices-item">
                     <p class="list-prices-item-title">Acceso de por vida</p>
-                    <span class="list-prices-item-price">
+                    <span class="list-prices-item-price price-disabled">
                         <p>$</p>
                         <p>99</p>
                     </span>
                     <p class="list-prices-item-text">*Ahorras $999+ comparado al plan anual.</p>
-                    <button class="list-prices-item-button">
-                        Escoger este
+                    <button class="list-prices-item-button button-prices-disabled">
+                        <p>Escoger este</p>
                         <span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 12H19" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -199,43 +266,8 @@
                             </svg>
                         </span>
                     </button>
-                </li>
-            </ul>
-            <h1 class="title">¿Preguntas? Aquí estamos para ti.</h1>
-            <ul class="list-quests">
-                <li class="list-quests-item">
-                    <p>Batabit me permite hacer compras en su plataforma?</p>
-                    <span>
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.91 0.589966L6.5 5.16997L11.09 0.589966L12.5 1.99997L6.5 7.99997L0.5 1.99997L1.91 0.589966Z" fill="#201E1C"/>
-                            </svg>
-                    </span>
-                </li>
-                <li class="list-quests-item">
-                    <p>Qué es Bitcoin?</p>
-                    <span>
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.91 0.589966L6.5 5.16997L11.09 0.589966L12.5 1.99997L6.5 7.99997L0.5 1.99997L1.91 0.589966Z" fill="#201E1C"/>
-                            </svg>
-                    </span>
-                </li>
-                <li class="list-quests-item">
-                    <p>Cómo puedo realizar una transacción en bitcoins?</p>
-                    <span>
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.91 0.589966L6.5 5.16997L11.09 0.589966L12.5 1.99997L6.5 7.99997L0.5 1.99997L1.91 0.589966Z" fill="#201E1C"/>
-                            </svg>
-                    </span>
-                </li>
-                <li class="list-quests-item">
-                    <p>Cómo aseguro mis compras?</p>
-                    <span>
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.91 0.589966L6.5 5.16997L11.09 0.589966L12.5 1.99997L6.5 7.99997L0.5 1.99997L1.91 0.589966Z" fill="#201E1C"/>
-                            </svg>
-                    </span>
-                </li>
-            </ul>
+                </article>
+            </section>
         </section>
     </main>
     <footer class="footer">
